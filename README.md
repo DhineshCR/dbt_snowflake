@@ -248,7 +248,7 @@ dbt build
 ```yaml
 # dbt_project.yml
 models:
-  olist_dbt:
+  dbt_snowflake_project:
     staging:
       +schema: staging
       +materialized: view
@@ -312,7 +312,11 @@ ORDER BY 2 DESC;
 ## 👤 Author
 
 **Dhinesh** — Data Engineering Practice Project  
+<<<<<<< HEAD
 LinkedIN Profile (https://www.linkedin.com/in/dhinesh-c-rajan/)
 Portfolio URL (https://dhineshcr.github.io)
 Github Profile (https://github.com/DhineshCR)
 Built to practice end-to-end data modelling with dbt Cloud + Snowflake.
+=======
+Built to practice end-to-end data modelling with dbt Cloud + Snowflake.
+>>>>>>> ca0e9e19308bdbe77be40a73b2c0b12c56036201
