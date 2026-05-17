@@ -248,7 +248,7 @@ dbt build
 ```yaml
 # dbt_project.yml
 models:
-  olist_dbt:
+  dbt_snowflake_project:
     staging:
       +schema: staging
       +materialized: view
