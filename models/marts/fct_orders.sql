@@ -36,9 +36,8 @@ final as (
         o.order_purchase_timestamp,
         o.order_delivered_customer_date,
         o.order_estimated_delivery_date,
-        datediff('day',
-            o.order_purchase_timestamp,
-            o.order_delivered_customer_date)    as actual_delivery_days,
+        {{ date_diff_days('o.order_purchase_timestamp', 'o.order_delivered_customer_date') }} 
+            as actual_delivery_days,
         datediff('day',
             o.order_purchase_timestamp,
             o.order_estimated_delivery_date)    as estimated_delivery_days,
@@ -54,4 +53,7 @@ final as (
     left join reviews r    on o.order_id = r.order_id
 )
 
-select * from final
+select  *, 
+        {{ delivery_status('actual_delivery_days', 'estimated_delivery_days') }} 
+            as delivery_status
+ from final
