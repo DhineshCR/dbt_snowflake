@@ -311,7 +311,8 @@ ORDER BY 2 DESC;
 
 ## 👤 Author
 
-**Dhinesh** — Data Engineering Practice Project  
+**Dhinesh** — Data Engineering Practice Project 
+
  - LinkedIN Profile (https://www.linkedin.com/in/dhinesh-c-rajan/)
  - Portfolio URL (https://dhineshcr.github.io)
  - Github Profile (https://github.com/DhineshCR)
