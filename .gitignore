@@ -4,3 +4,25 @@ target/
 dbt_packages/
 logs/
 dbt_internal_packages/
+
+# dbt
+.user.yml
+
+# Credentials — NEVER commit these
+profiles.yml
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
